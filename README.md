@@ -3,7 +3,7 @@
 
 ## Overview
 
-The MQTT Explorer subscriber client is designed to explore MQTT topics in your IoT Platform, show and sort statistics. It is useful if you want to analyze how much and what kind of information flows from publishers to the selected topic hierarchy. 
+The **MQTT Explorer** subscriber client is designed to explore MQTT topics in your IoT Platform, show and sort statistics. It is useful if you want to analyze how much and what kind of information flows from publishers to the selected topic hierarchy. 
 
 Commercial MQTT brokers have extensive global statistics in the $SYS topic, as detailed at
 https://github.com/mqtt/mqtt.github.io/wiki/SYS-Topics
@@ -42,10 +42,18 @@ Example usage:
 
 The top area of the canvas displays status, such as what broker it is connected to, what topic hierarchy is subscribed to, and statistics about messages, topics, archiving and filtering.
 
-By default, all topics are interesting only if they have published more than one message. This is because Will messages are only published once (see MQTT specs section 3.1.2.5). Interesting messages appear in the list above, uninteresting in the Filtered list below. You can make the lower list smaller by sliding the canvas separator between the 2 lists.
+By default, all topics are interesting only if they have published more than one message. This is because Will messages are only published once (see MQTT specs section 3.1.2.5). **Interesting** messages appear in the list above, uninteresting in the **Filtered** list below. You can make the lower list smaller by sliding the canvas separator between the 2 lists.
 
 Rather than displaying topics in a flat space, they are listed in a hierarchy. Thus you can expand only the hierarchies of messages you are interested in. Clicking the blue triangle in front of a topic expands it, or you can select the topic by clicking on it, and press the Expand button to expand its entire hierarchy.
 
-You can sort on any of the columns, eg. to find highest frequency topics, click on Msgs/s, or for highest bandwidth click on Bytes.
+You can sort on any of the columns, eg. to find **highest frequency topics**, click on Msgs/s, or for highest bandwidth click on Bytes.
 
-You can focus on certain topics by entering a regular expression in the Match topic(s) field. For example, ^edge matches all topics that start with edge. All others are hidden. 
+You can focus on certain topics by entering a **regular expression** in the Match topic(s) field. For example, ^edge matches all topics that start with edge. All others are hidden. 
+
+### File Menu
+
+If you use File->New it zeros out the collected topics, and will display the active topics from now on. This is because the broker publishes received "will" messages on all topics first. Most of those topics may no longer be active.
+
+File -> Save dumps the topic statistics to the file dump.lst.
+
+### Topic Menu 
