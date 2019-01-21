@@ -34,7 +34,7 @@ This python package requires
 
 Example usage:
 
-./mqtt-stats.py --host iot.eclipse.org --topic '#' --qos 2
+./mqtt-explorer.py --host iot.eclipse.org --topic '#' --qos 2
 
 ![screenshot](https://github.com/gambitcomminc/mqtt-explorer/blob/master/mqtt-explorer1.png)
 
