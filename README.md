@@ -36,7 +36,7 @@ Example usage:
 
 ./mqtt-stats.py --host iot.eclipse.org --topic '#' --qos 2
 
-![screenshot](https://github.com/gambitcomminc/mqtt-explorer/blob/master/mqtt-explorer.png)
+![screenshot](https://github.com/gambitcomminc/mqtt-explorer/blob/master/mqtt-explorer1.png)
 
 If you use File->New it zeros out the collected topics, and will display the active topics from now on. This is because the broker publishes received "will" messages on all topics first. Most of those topics may no longer be active.
 
