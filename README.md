@@ -5,7 +5,9 @@
 
 The MQTT Explorer subscriber client is designed to explore MQTT topics in your IoT Platform, show and sort statistics. It is useful if you want to analyze how much and what kind of information flows from publishers to the selected topic hierarchy. 
 
-Commercial MQTT brokers have extensive global statistics in the $SYS topic, as detailed here, but not per-topic statistics. Furthermore, there is no easy way to explore what's happening in real-time.
+Commercial MQTT brokers have extensive global statistics in the $SYS topic, as detailed at
+https://github.com/mqtt/mqtt.github.io/wiki/SYS-Topics
+, but not per-topic statistics. Furthermore, there is no easy way to explore what's happening in real-time.
 
  Relevant questions are:
 
