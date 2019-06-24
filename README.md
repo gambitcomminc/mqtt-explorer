@@ -57,3 +57,8 @@ If you use File->New it zeros out the collected topics, and will display the act
 File -> Save dumps the topic statistics to the file dump.lst.
 
 ### Topic Menu 
+
+With advanced options for SSL/TLS and client-id, it allows to investigate activity for secure brokers, eg. AWS Greengrass
+
+![screenshot](https://github.com/gambitcomminc/mqtt-explorer/blob/master/mqtt-explorer-greengrass.png)
+
